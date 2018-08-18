@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>calculator</title>
+    <link href="css/cal1.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body style="background:  #E93449;">
+        <div class="container"> 
+          <div id="calculatorBody">
+                <form class="ctop">
+                  <!-- < id="input-value"></span>
+                  <span id="answer">0123</span> -->
+                  <input type="text"  id="input-value">
+                  <input type="text" id="answer" placeholder="=">
+                </form>
+          
+                  
+                <div>
+                      
+                        <input id="AC" type="button"  onclick="clear_all()"  value="AC"/>
+                        <input id="PM" type="button" onclick="numericButton('+/-')" value="+/-"/>
+                        <input id="modulos" type="button" onclick="numericButton('%')"   value="%"/>
+                        <input id="multi" type="button" onclick="numericButton('*')"  value="*"/>
+                  </div>
+                  <div>
+                      <input id="seven" type="button" onclick="numericButton(7)"  value="7"/>
+                      <input type="button" onclick="numericButton(8)"  value="8"/>
+                      <input type="button"  onclick="numericButton(9)" value="9"/>
+                      <input id="division" onclick="numericButton('/')"type="button"  value="/"/>
+                </div>
+                  <div>
+                      <input type="button" onclick="numericButton(4)" value="4"/>
+                      <input type="button"onclick="numericButton(5)" value="5"/>
+                      <input type="button" onclick="numericButton(6)"  value="6"/>
+                    <input id="minus"  type="button" onclick="numericButton('-')"  value="-"/>
+                </div>
+                  <div>
+                      <input type="button" onclick="numericButton(1)"  value="1"/>
+                      <input type="button"  onclick="numericButton(2)" value="2"/>
+                      <input type="button" onclick="numericButton(3)"  value="3"/>
+                      <input id="plus" type="button" onclick="numericButton('+')"   value="+"/>
+                </div>
+                  <div>
+                     <input id="zero"type="button" onclick="numericButton(0)"    value="0"/>
+                     
+                     <input type="button" onclick="numericButton('.')"   value="."/>
+                     <input id="equals" type="button" onclick="equalButton()"   value="="/>
+
+                          
+                
+                </div>
+            </div>
+            </div>
+            <script>
+            //  function to clear all
+            // Author:sahana 9/08/2018 
+              function clear_all(){
+                document.getElementById("input-value").value="";
+                document.getElementById("answer").value="0";
+              }
+
+              
+              // function to display the inputs on screen
+              // Author:sahana 9/08/2018
+              function numericButton(val){
+                document.getElementById("input-value").value +=val;
+                
+              }
+              // function to display the calculation when equal button is press
+              // Author:sahana 9/08/2018
+              function equalButton(){
+                var array=parseCalculationString( document.getElementById("input-value").value);
+                // array is which contains converted array elements
+                var result;
+                for(var i=0;i<array.length;i++)
+                {
+                var first_operand=array.shift();  //function remove first element and store in variable
+                var operator=array.shift(); //function remove first element and store in variable
+                var second_operand=array.shift();  //function remove first element and store in variable
+                switch (operator){
+                  case '+':result=first_operand + second_operand;
+                        array.unshift(result);
+                          break;
+                  case '-':result=first_operand - second_operand;
+                          array.unshift(result);
+                            break;
+                  case '*':result=first_operand * second_operand;
+                          array.unshift(result);
+                          break;
+                  case '%':result=first_operand % second_operand;
+                          array.unshift(result);
+                          break;
+                  case '/':
+                          result=first_operand / second_operand;
+                           array.unshift(result);
+                           break;
+                }
+                }
+                document.getElementById('answer').value=result;
+              }
+              // function to convert string to an array
+              // Author:sahana 9/08/2018
+              function parseCalculationString(input) {  //input is parameter contain string 
+    
+          var calculation = [];
+          current = '';
+          for (var i = 0, ch; ch = input.charAt(i); i++) {
+          if ('^*/+-%'.indexOf(ch) > -1) {    //condition to check the number or operator
+            if (current == '' && ch == '-') {
+                current = '-';
+            } else {
+                calculation.push(parseFloat(current), ch);  //push the operator and number to array
+                current = '';           //make the array empty string
+            }
+        } else {
+            current += input.charAt(i); //store the number in current string
+        }
+    }
+    if (current != '') {
+        calculation.push(parseFloat(current));  //push the last value into array 
+    }
+   return calculation;          
+
+}
+            
+
+
+            </script>
+                
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+   </body>
+</html>

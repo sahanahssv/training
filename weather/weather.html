@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>weatherr</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/weather.css" rel="stylesheet">
+  </head>
+  <body onload="weather()">
+      <div class="container outline">
+          <div class="row">
+              <div class="col-xs-12 col-sm-4 col-md-4 today-whether col-class-padding ">
+                <h2 id="day"></h2>
+                <div id="img"></div>
+                <div style="font-size: 18px;color:white; text-align: center;margin-top:50px;">
+                <span id="high"></span>
+                <span>|</span>
+                <span id="low"></span>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-8 col-md-8 col-class-padding">
+                    <div class="location">
+                        <p id="wish"></p>
+                        <div class="city_dropdown">
+                          <select id="selection" onchange="weather()">
+                            <option value="bangalore">BANGALORE</option>
+                            <option value="mangalore">MANGALORE</option>
+                            <option value="chennai">CHENNAI</option>
+                            <option value="goa">GOA</option>
+                            <option value="rajasthan">RAJASTHAN</option>
+                            <option value="delhi">DELHI</option>
+                          </select>
+                        </div>
+              
+                        
+                    </div>
+
+                </div>
+              </div>
+          <div class="row">
+              <div class="col-xs-12 col-sm-2 col-md-2">
+                <p id="day-one"></p>
+                <div id="img1">
+                </div>
+                <div style="font-size: 20px;color: blue; text-align: center; ">
+                        <span id="high1"></span>
+                        <span>|</span>
+                        <span id="low1"></span>
+                        </div>
+
+              </div>
+              <div class="col-xs-12 col-sm-2 col-md-2" >
+                    <p id="day-two"></p>
+                    <div id="img2"></div>
+                    <div style="font-size: 20px;color: blue; text-align: center;">
+                            <span id="high2"></span>
+                            <span>|</span>
+                            <span id="low2"></span>
+                            </div>
+                </div>
+                <div class="col-xs-12 col-sm-2 col-md-2">
+                        <p id="day-three"></p>
+                        <div id="img3"></div>
+                        <div style="font-size: 20px;color: blue; text-align: center;">
+                                <span id="high3"></span>
+                                <span>|</span>
+                                <span id="low3"></span>
+                                </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-2 col-md-2">
+                            <p id="day-four"></p>
+                            <div id="img4"></div>
+                            <div style="font-size: 20px;color: blue;text-align: center;">
+                                    <span id="high4"></span>
+                                    <span>|</span>
+                                    <span id="low4"></span>
+                                    </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-2 col-md-2 ">
+                                <p id="day-five"></p>
+                                <div id="img5"></div>
+                                
+                                <div style="font-size: 20px;color: blue;text-align: center;">
+                                        <span id="high5"></span>
+                                        <span>|</span>
+                                        <span id="low5"></span>
+                                        </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-2 col-md-2">
+                                    <p id="day-six"></p>
+                                    <div id="img6"></div>
+                                    <div style="font-size: 20px;color: blue; text-align: center;">
+                                            <span id="high6"></span>
+                                            <span>|</span>
+                                            <span id="low6"></span>
+                                            </div>
+                                </div>
+          </div>
+      </div>
+    </div>
+
+
+        <script src="js/weather.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

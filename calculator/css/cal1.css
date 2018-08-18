@@ -1,0 +1,71 @@
+#calculatorBody{
+    margin-top: 100px;
+  }
+  
+  .ctop{
+    width:270px;
+    height: 152px;
+    background: #31384B;
+  }
+  #input-value{
+    width: 270px;
+    display: inline-block;
+    text-align: right;
+    font-family: 'Dosis', sans-serif;
+    color: #9C9FAA;
+    margin-top: 30px;
+    height: 40px;
+    font-size:20px;
+    background:  #31384B;
+
+  }
+  #answer{
+    width:270px;
+    display: inline-block;
+    text-align: right;
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    height: 80px;
+    font-size: 50px;
+    background:  #31384B;
+    }
+  input {
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    font-size: 25px;
+    font-family: 'Dosis', sans-serif;
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 4px;
+    margin:0px;
+    font-weight: 900;
+  }
+  #AC {
+     background: #9C9FAA;
+  }
+  #equals{
+    background: #E93449;
+  }
+  #PM{
+    background-color: #9C9FAA;
+  }
+  #multi{
+    background-color: #9C9FAA;
+  }
+  #division{
+    background-color: #9C9FAA;
+  }
+  #modulos{
+    background-color: #9C9FAA;
+  }
+  #minus{
+    background-color: #9C9FAA;
+  }
+  #plus{
+    background-color: #9C9FAA;
+  }
+  #zero{
+    width:134px;
+    text-align: center;
+  }

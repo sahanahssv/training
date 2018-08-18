@@ -1,0 +1,123 @@
+
+
+.outline{
+    border:30px solid rgb(51, 51, 110);
+}
+.today-whether{
+    background-color: rgb(32, 32, 230);
+    height: 400px;
+   
+}
+.city_dropdown{
+    position: absolute;
+    font-size: 30px;
+   top: 56px;
+   left: 21px;
+   
+}
+
+.location{
+    background-image: url("../images/location.jpg");
+    height: 400px;
+    width: 100%;
+    background-repeat:no-repeat;  
+    position: relative;
+
+}
+.col-class-padding{
+    padding: 0px;
+}
+/* p{
+    position: absolute;
+    color: blue;
+    font-size: 30px;
+    left: 30px;
+} */
+
+.location-name{
+    position:absolute;
+    top:30px;
+    left: 30px;
+    color: blue;
+    letter-spacing: 0.5ch;
+}
+#wish {
+    color:blue;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left: 21px;
+}
+#day{
+    color: white;
+    text-align: center;
+}
+#day-one{
+    color: blue;
+    text-align: center;
+    font-size: 18px;
+}
+#day-two{
+    color: blue;
+    text-align: center;
+    font-size: 18px;
+}
+#day-three{
+    color: blue;
+    text-align: center;
+    font-size: 18px;
+}
+#day-four{
+    color: blue;
+    text-align: center;
+    font-size: 18px;
+}
+#day-five{
+    color: blue;
+    text-align: center;
+    font-size: 18px;
+}
+#day-six{
+    color: blue;
+    text-align: center;
+    font-size: 18px;
+}
+.days{
+    height: 200px;
+}
+#img{
+    width: 180px;
+    height: 180px;
+    margin-left: 100px;
+}
+#img1{
+    width: 180px;
+    height: 180px;
+}
+#img2{
+    width: 200px;
+    height: 180px;
+}
+#img3{
+    width: 200px;
+    height: 180px;
+}
+#img4{
+    width: 200px;
+    height: 180px;
+}
+#img5{
+    width: 200px;
+    height: 180px;
+}
+#img6{
+    width: 160px;
+    height: 180px;
+}
+
+
+
+
+
+
+
