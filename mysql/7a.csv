@@ -1,0 +1,11 @@
+customer_id,customer_name,customer_mobile,apartment_name,block_name,balance
+1,cus1,11111,ap1,a,10
+2,cus2,222222,ap1,a,20
+NULL,NULL,NULL,NULL,b,NULL
+3,cus3,333333,ap2,c,15
+4,cus4,4444444,ap3,d,65
+6,cus6,6666666,ap3,e,100
+5,cus5,555555,ap1,f,15
+7,cus7,7777777,ap2,g,58
+8,cus8,88888888,ap4,h,69
+NULL,NULL,NULL,NULL,i,NULL
